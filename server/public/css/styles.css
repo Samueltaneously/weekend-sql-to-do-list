@@ -5,6 +5,10 @@ h1 {
     text-align: center;
 }
 
+#clickspot:hover {
+    cursor: pointer;
+}
+
 #addTask, #newTasks, #completeTasks {
     text-align: center;
 }
