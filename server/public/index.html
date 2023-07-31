@@ -4,23 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="vendors/jquery.js"></script>
+    <script src="vendors/jquery-ui.js"></script>
     <script src="scripts/client.js"></script>
     <link rel="stylesheet" href="css/styles.css">
     <title>Document</title>
 </head>
 
 <body>
+    <h1>Pending Tasks</h1>
+    <hr>
     <section id="addTask">
-        <input id="taskInput" placeholder="Add a new task."> <button id="taskSubmit">Add task!</button>
-        <hr>
+         <hr>
     </section>
 
     <section>
-        <h3>Tasks</h3>
+        <h3 id="newTasks">To Do</h3>
+        <span id="animate">+</span><span id="clickspot">Add a new task</span><div id="toggle">
+            <input id="taskInput" placeholder="New task."> <button id="taskSubmit">Add task!</button>
+        </div>
+
         <div id="taskList">
+        </div>
+
+    </section>
+
+    <section id="completeTasks">
+        <h3>Completed</h3>
+        <div id="completedTasks">
 
         </div>
     </section>
+
+    
 </body>
 
 </html>

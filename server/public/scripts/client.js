@@ -5,6 +5,12 @@ function onReady(){
     $( '#taskList' ).on( 'click', '.removeBtn', removeTask );
     $( '#taskList' ).on( 'click', '.toggleCompleteBtn', toggleComplete );
     
+    
+    $( "#toggle" ).hide();
+    $( "#clickspot" ).click(function() {
+        $( "#toggle" ).toggle( "slide" );
+    });
+   
     getTasks();
 }
 
